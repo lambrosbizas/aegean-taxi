@@ -1064,7 +1064,7 @@ export default function AboutUsPage() {
             Emergency Arbitrator provisions are excluded. The Dispute shall be
             resolved by one (1) arbitrator to be appointed in accordance with
             the ICC Rules. The place of both mediation and arbitration shall be
-            London, UK, without prejudice to any rights you may have under
+            London, GB, without prejudice to any rights you may have under
             Article 18 of the Brussels I bis Regulation (OJ EU 2012 L351/1)
             and/or Article 6:236n of the Dutch Civil Code. The language of the
             mediation and/or arbitration shall be English, unless you do not

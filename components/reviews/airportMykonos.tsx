@@ -13,7 +13,7 @@ import Slider from "react-slick";
 
 //MUI
 
-import UK from "public/assets/flags/gb.svg";
+import GB from "public/assets/flags/gb.svg";
 import US from "public/assets/flags/us.svg";
 import IT from "public/assets/flags/it.svg";
 
@@ -187,7 +187,7 @@ export default function AirportMykonosReviews() {
                   }}
                 >
                   <Box sx={{ p: 2 }}>
-                    <Image src={UK} width={60} alt="UK" />
+                    <Image src={GB} width={60} alt="GB" />
                     <Typography
                       variant="body1"
                       gutterBottom

@@ -14,7 +14,7 @@ import Slider from "react-slick";
 //MUI
 
 import US from "public/assets/flags/us.svg";
-import UK from "public/assets/flags/gb.svg";
+import GB from "public/assets/flags/gb.svg";
 import IT from "public/assets/flags/it.svg";
 
 export default function ToursSantoriniReviews() {
@@ -138,7 +138,7 @@ export default function ToursSantoriniReviews() {
                   }}
                 >
                   <Box sx={{ p: 2 }}>
-                    <Image src={UK} width={60} alt="UK" />
+                    <Image src={GB} width={60} alt="GB" />
                     <Typography
                       variant="body1"
                       gutterBottom
