@@ -13,7 +13,7 @@ import Slider from "react-slick";
 
 //MUI
 
-import UK from "public/assets/flags/uk.svg";
+import UK from "public/assets/flags/gb.svg";
 import SE from "public/assets/flags/se.svg";
 import FR from "public/assets/flags/fr.svg";
 
@@ -58,8 +58,9 @@ export default function TaxiRhodesReviews() {
               mt: 5,
             }}
           >
-            What travelers who booked a <br />ride with
-            Aegean Taxi in Rhodes<br /> say about us
+            What travelers who booked a <br />
+            ride with Aegean Taxi in Rhodes
+            <br /> say about us
           </Typography>
           <Typography
             component="h2"

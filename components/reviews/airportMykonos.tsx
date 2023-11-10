@@ -13,7 +13,7 @@ import Slider from "react-slick";
 
 //MUI
 
-import UK from "public/assets/flags/uk.svg";
+import UK from "public/assets/flags/gb.svg";
 import US from "public/assets/flags/us.svg";
 import IT from "public/assets/flags/it.svg";
 
@@ -58,8 +58,9 @@ export default function AirportMykonosReviews() {
               mt: 5,
             }}
           >
-            What travelers who booked their<br /> Mykonos
-             airport ride<br /> with Aegean Taxi say
+            What travelers who booked their
+            <br /> Mykonos airport ride
+            <br /> with Aegean Taxi say
           </Typography>
           <Typography
             component="h2"

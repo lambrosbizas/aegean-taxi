@@ -13,7 +13,7 @@ import Slider from "react-slick";
 
 //MUI
 
-import UK from "public/assets/flags/uk.svg";
+import UK from "public/assets/flags/gb.svg";
 import US from "public/assets/flags/us.svg";
 import FR from "public/assets/flags/fr.svg";
 

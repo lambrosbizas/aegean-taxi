@@ -13,7 +13,7 @@ import Slider from "react-slick";
 
 //MUI
 
-import UK from "public/assets/flags/uk.svg";
+import UK from "public/assets/flags/gb.svg";
 import US from "public/assets/flags/us.svg";
 import AE from "public/assets/flags/ae.svg";
 
@@ -72,8 +72,7 @@ export default function ToursMykonosReviews() {
               // lineHeight: { xs: "48px", md: "68px" },
             }}
           >
-            What travelers who booked their Mykonos tour with Aegean
-            Taxi say
+            What travelers who booked their Mykonos tour with Aegean Taxi say
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>

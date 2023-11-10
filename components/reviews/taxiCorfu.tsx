@@ -13,7 +13,7 @@ import Slider from "react-slick";
 
 //MUI
 
-import UK from "public/assets/flags/uk.svg";
+import UK from "public/assets/flags/gb.svg";
 import US from "public/assets/flags/us.svg";
 import GR from "public/assets/flags/gr.svg";
 
@@ -58,8 +58,8 @@ export default function TaxiCorfuReviews() {
               mt: 5,
             }}
           >
-            What travelers who booked <br />a ride with
-            Aegean Taxi in<br /> Corfu say about us
+            What travelers who booked <br />a ride with Aegean Taxi in
+            <br /> Corfu say about us
           </Typography>
           <Typography
             component="h2"
@@ -149,8 +149,8 @@ export default function TaxiCorfuReviews() {
                       The best option for transportation in Corfu island.
                       Reliable, professionals and always very polite! I used
                       their service twice in Corfu and I was very satisfied.
-                      It&apos;s more affordable even compared with moving with your
-                      own car. Highly recommended!
+                      It&apos;s more affordable even compared with moving with
+                      your own car. Highly recommended!
                     </Typography>
 
                     {/* User */}

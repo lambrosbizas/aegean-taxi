@@ -14,7 +14,7 @@ import Slider from "react-slick";
 //MUI
 
 import US from "public/assets/flags/us.svg";
-import UK from "public/assets/flags/uk.svg";
+import UK from "public/assets/flags/gb.svg";
 import IT from "public/assets/flags/it.svg";
 
 export default function ToursSantoriniReviews() {
