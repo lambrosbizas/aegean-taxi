@@ -2,7 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 import NextLink from "next/link";
 
-// mui
+// mui //
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -130,7 +130,12 @@ export default function DrawerAppBar(props: Props) {
                   width: "75px",
                 }}
               >
-                <Image src={logo} alt="Aegean logo" height={30} priority={true} />
+                <Image
+                  src={logo}
+                  alt="Aegean logo"
+                  height={30}
+                  priority={true}
+                />
               </Link>
             </Box>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
