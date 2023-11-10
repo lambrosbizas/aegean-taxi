@@ -58,8 +58,8 @@ export default function TaxiAthensReviews() {
               mt: 5,
             }}
           >
-            What travelers who booked a<br /> ride with
-            Aegean Taxi in Athens<br /> say about us
+            What travelers who booked a<br /> ride with Aegean Taxi in Athens
+            <br /> say about us
           </Typography>
           <Typography
             component="h2"
