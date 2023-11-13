@@ -538,7 +538,7 @@ export default function BookOnline() {
 
   const stateManagement = async () => {
     console.log("state managenment");
-    await calculateAndDisplayRoute();
+    //await calculateAndDisplayRoute();
 
     /* Step 1 - Select route  */
     // if (
@@ -561,10 +561,13 @@ export default function BookOnline() {
     // }
 
     /* Step 3 - Select car  */
-    if (cookieState && cookieState.orderDetails && !cookieState.selectedCar) {
+    if (
+      cookieState &&
+      !cookieState.selectedCar &&
+      !cookieState.selectedCarConfirmed
+    ) {
       console.log("step 3");
-      setOrderDetails(null);
-      // await calculateAndDisplayRoute();
+      await calculateAndDisplayRoute();
     }
     // userVerified
 
@@ -573,6 +576,7 @@ export default function BookOnline() {
       cookieState &&
       cookieState.userVerified &&
       cookieState.selectedCar &&
+      cookieState.selectedCarConfirmed &&
       // !cookieState.orderDetails &&
       !cookieState.driver
     ) {
@@ -791,6 +795,7 @@ export default function BookOnline() {
   };
 
   const calculateAndDisplayRoute = async () => {
+    console.log("calculateAndDisplayRoute");
     if (
       bookingState &&
       directionsService &&
@@ -825,15 +830,15 @@ export default function BookOnline() {
           setPredictions([]);
           setOpen(false);
           try {
-            if (!bookingState.selectedCar) {
-              gatAvailableRouteCars(
-                bookingState.apiToken,
-                response.routes[0].legs[0].start_location.lat(),
-                response.routes[0].legs[0].start_location.lng(),
-                response.routes[0].legs[0].end_location.lat(),
-                response.routes[0].legs[0].end_location.lng()
-              );
-            }
+            // if (bookingState.selectedCar) {
+            gatAvailableRouteCars(
+              bookingState.apiToken,
+              response.routes[0].legs[0].start_location.lat(),
+              response.routes[0].legs[0].start_location.lng(),
+              response.routes[0].legs[0].end_location.lat(),
+              response.routes[0].legs[0].end_location.lng()
+            );
+            //}
           } catch (error) {
             setError(() => "No available route");
             clearDirections();
@@ -1221,7 +1226,7 @@ export default function BookOnline() {
   const nextButtonHandler = async () => {
     setNextButton(false);
     setSelectCarStep(true);
-    // await calculateAndDisplayRoute();
+    await calculateAndDisplayRoute();
     setOpen(true);
   };
 
@@ -1692,11 +1697,13 @@ export default function BookOnline() {
                         onClick={authorizeUser}
                         size="large"
                         fullWidth={true}
-                        disabled={
-                          (!selectedCar && contextState.userVerified) ||
-                          (contextState.selectedCarConfirmed &&
-                            contextState.userVerified)
-                        }
+                        disabled={!selectedCar}
+                        //(
+                        //     !selectedCar && contextState.userVerified
+                        //   ) ||
+                        //   (contextState.selectedCarConfirmed &&
+                        //     contextState.userVerified)
+                        // }
                       >
                         {selectedCar
                           ? `Confirm ${
