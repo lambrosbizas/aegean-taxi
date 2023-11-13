@@ -580,7 +580,12 @@ export default function BookOnline() {
       await calculateAndDisplayRoute();
       setSelectedCar(cookieState.selectedCar);
       setTimeout(async () => {
-        await createOrder();
+        console.log("TIME SEARHING");
+        if (contextState.orderDetails) {
+          getOrderUpdate(cookieState.orderDetails);
+        } else {
+          await createOrder();
+        }
       }, 1500);
     }
 
@@ -1688,7 +1693,9 @@ export default function BookOnline() {
                         size="large"
                         fullWidth={true}
                         disabled={
-                          !selectedCar || contextState.selectedCarConfirmed
+                          (!selectedCar && contextState.userVerified) ||
+                          (contextState.selectedCarConfirmed &&
+                            contextState.userVerified)
                         }
                       >
                         {selectedCar

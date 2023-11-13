@@ -29,6 +29,7 @@ import { BookingState } from "@/types/bookingState";
 
 // crypto
 import AES from "crypto-js/aes";
+import { Code } from "@mui/icons-material";
 
 const countryListExcluded = [
   { code: "AD", label: "Andorra", phone: "376" },
@@ -450,9 +451,9 @@ export default function VerificationComponent({}: {}) {
   }, []);
 
   useEffect(() => {
-    if (aegeanState) {
-      bookingContext.updateAppState(aegeanState);
-    }
+    // if (aegeanState) {
+    //   bookingContext.updateAppState(aegeanState);
+    // }
 
     if (bookingState && data && !bookingState.apiToken) {
       bookingState.apiToken = data.access_token;
@@ -491,6 +492,7 @@ export default function VerificationComponent({}: {}) {
       `${process.env.NEXT_PUBLIC_CRYPTO_KEY}`
     ).toString();
     // bookingState = aegeanState;
+    console.log("SECURITY", securityCode);
     bookingContext.updateAppState(aegeanState);
 
     bookingState.phoneNumber = `+${countryCode}${phone}`;
