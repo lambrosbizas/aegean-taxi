@@ -14,7 +14,7 @@ export type BookingState = {
   driverDetails: any;
   directions: any;
   selectedCar: any;
-  selectedCarConfirmed: boolean | null;
+  selectedCarConfirmed: any;
   orderDetails: any;
   showNavigatorButton: boolean;
   nextButton: boolean;

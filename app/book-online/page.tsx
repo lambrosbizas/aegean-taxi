@@ -561,13 +561,10 @@ export default function BookOnline() {
     // }
 
     /* Step 3 - Select car  */
-    if (
-      cookieState &&
-      !cookieState.selectedCar &&
-      !cookieState.selectedCarConfirmed
-    ) {
+    if (cookieState && cookieState.orderDetails && !cookieState.selectedCar) {
       console.log("step 3");
-      await calculateAndDisplayRoute();
+      setOrderDetails(null);
+      // await calculateAndDisplayRoute();
     }
     // userVerified
 
