@@ -18,7 +18,7 @@ export default function Taxi() {
       <SectionSpacer xst={6} xsb={6} mdt={6} mdb={6}>
         <WaysToRide />
       </SectionSpacer>
-      <Reviews />
+      <Reviews location={"default"} />
       <Locations />
     </>
   );

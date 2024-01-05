@@ -33,7 +33,7 @@ export default function TaxiReviews() {
         reviewsComponent = <TaxiRhodesReviews />;
         break;
       default:
-        reviewsComponent = <Reviews />;
+        reviewsComponent = <Reviews location={params.location} />;
         break;
     }
   }

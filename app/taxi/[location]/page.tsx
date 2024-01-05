@@ -22,6 +22,7 @@ export async function generateStaticParams() {
     { location: "santorini-taxi-app" },
     { location: "corfu-taxi-app" },
     { location: "rhodes-taxi-app" },
+    { location: "milos-taxi-app" },
   ];
 
   return taxi.map((taxi: any) => ({
@@ -65,6 +66,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title = "Rhodes Taxi App | Affordable Taxi rides | Available 24/7";
         description =
           "Book your Rhodes Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
+        break;
+      case "milos":
+        title = "Milos Taxi App | Affordable Taxi rides | Available 24/7";
+        description =
+          "Book your Milos Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
         break;
     }
   }

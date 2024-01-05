@@ -226,6 +226,18 @@ export default function FooterLayout() {
                       Rhodes
                     </MUILink>
                   </ListItem>
+                  <ListItem sx={{ pl: 0 }}>
+                    <MUILink
+                      underline="none"
+                      color="#fff"
+                      href="/taxi/milos-taxi-app/"
+                      component={NextLink}
+                      rel="canonical"
+                      variant="body1"
+                    >
+                      Milos
+                    </MUILink>
+                  </ListItem>
                 </List>
               </Grid>
               <Grid

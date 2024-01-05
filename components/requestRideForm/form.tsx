@@ -81,7 +81,19 @@ export default function FormComponent({
             // borderBottom: `3px solid #000`,
             width: "100%",
           }}
+          style={{ position: "relative" }}
         >
+          <div
+            style={{
+              position: "absolute",
+              background: "transparent",
+              width: "100%",
+              height: "160px",
+              top: "0",
+              zIndex: 1,
+            }}
+          ></div>
+
           {displayTitle && (
             <Box
               sx={{

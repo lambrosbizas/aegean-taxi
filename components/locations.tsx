@@ -19,6 +19,8 @@ import { Link as MUILink } from "@mui/material";
 import ATHENS from "public/assets/Athens.png";
 import MYKONOS from "public/assets/Mykonos.png";
 import SANTORINI from "public/assets/Santorini.png";
+import MILOS from "public/assets/taxi-milos.jpeg";
+
 import CORFU from "public/assets/Corfu.png";
 import RHODES from "public/assets/Rhodes.png";
 
@@ -81,7 +83,11 @@ export default function Locations() {
       <Box sx={{ my: 5, p: { xs: 2, md: 0 } }}>
         <Slider {...settings}>
           <Stack spacing={2} sx={{ textAlign: "center", p: 1 }}>
-            <MUILink underline="none" href="/taxi/athens-taxi-app" component={NextLink}>
+            <MUILink
+              underline="none"
+              href="/taxi/athens-taxi-app"
+              component={NextLink}
+            >
               <Paper>
                 <Box sx={{ p: 2 }}>
                   <Typography
@@ -123,7 +129,11 @@ export default function Locations() {
             </MUILink>
           </Stack>
           <Stack spacing={2} sx={{ textAlign: "center", p: 1 }}>
-            <MUILink underline="none" href="/taxi/mykonos-taxi-app" component={NextLink}>
+            <MUILink
+              underline="none"
+              href="/taxi/mykonos-taxi-app"
+              component={NextLink}
+            >
               <Paper>
                 <Box sx={{ p: 2 }}>
                   <Typography
@@ -209,7 +219,11 @@ export default function Locations() {
             </MUILink>
           </Stack>
           <Stack spacing={2} sx={{ textAlign: "center", p: 1 }}>
-            <MUILink underline="none" href="/taxi/corfu-taxi-app" component={NextLink}>
+            <MUILink
+              underline="none"
+              href="/taxi/corfu-taxi-app"
+              component={NextLink}
+            >
               <Paper>
                 <Box sx={{ p: 2 }}>
                   <Typography
@@ -250,7 +264,11 @@ export default function Locations() {
             </MUILink>
           </Stack>
           <Stack spacing={2} sx={{ textAlign: "center", p: 1 }}>
-            <MUILink underline="none" href="/taxi/rhodes-taxi-app" component={NextLink}>
+            <MUILink
+              underline="none"
+              href="/taxi/rhodes-taxi-app"
+              component={NextLink}
+            >
               <Paper>
                 <Box sx={{ p: 2 }}>
                   <Typography
@@ -269,6 +287,51 @@ export default function Locations() {
                     sx={{
                       minHeight: { xs: 224, md: 345 },
                       backgroundImage: `url(${RHODES.src})`,
+                      backgroundSize: "cover",
+                      mb: 3,
+                      borderRadius: 3,
+                    }}
+                  ></Box>
+                  <Typography
+                    component="span"
+                    variant="body1"
+                    sx={{
+                      mt: 3,
+                      lineHeight: 3,
+                      borderBottom: `3px solid #000`,
+                      width: "75px",
+                    }}
+                  >
+                    Find a ride
+                  </Typography>
+                </Box>
+              </Paper>
+            </MUILink>
+          </Stack>
+          <Stack spacing={2} sx={{ textAlign: "center", p: 1 }}>
+            <MUILink
+              underline="none"
+              href="/taxi/rhodes-taxi-app"
+              component={NextLink}
+            >
+              <Paper>
+                <Box sx={{ p: 2 }}>
+                  <Typography
+                    component={"div"}
+                    variant="h5"
+                    gutterBottom
+                    sx={{
+                      fontWeight: 500,
+                      mb: 2,
+                      textAlign: { xs: "left", md: "center" },
+                    }}
+                  >
+                    Milos
+                  </Typography>
+                  <Box
+                    sx={{
+                      minHeight: { xs: 224, md: 345 },
+                      backgroundImage: `url(${MILOS.src})`,
                       backgroundSize: "cover",
                       mb: 3,
                       borderRadius: 3,
