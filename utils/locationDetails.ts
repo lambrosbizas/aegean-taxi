@@ -77,20 +77,7 @@ To enable screen reader support, press ⌘+Option+Z To learn about keyboard shor
       {
         flag: "french",
         dateName: "Laura - March 2023",
-        text: `
-Aegean taxi new design
-100%
-E53
-
-Booking a ride on Milos Island was very easy with the Web-based service provided by Aegean Taxi. The process is simple, and their professional drivers will ensure you have a comfortable and safe ride. They all speak English
- 
- 
- 	
-
-
-Turn on screen reader support
- 
-To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slashLampros Bizas has joined the document.`,
+        text: `Booking a ride on Milos Island was very easy with the Web-based service provided by Aegean Taxi. The process is simple, and their professional drivers will ensure you have a comfortable and safe ride. They all speak English`,
       },
       {
         flag: "america",
@@ -116,12 +103,12 @@ To enable screen reader support, press ⌘+Option+Z To learn about keyboard shor
       {
         q: `Is it easy to find a taxi in Milos?
 `,
-        a: `No. Taxis in Milos can be hard to find, especially in the peak months of July and August. If you want to book your ride in advance or on demend, the best way is to download the Aegean Taxi app or use one of the other 3 methods to book your ride
+        a: `No. Taxis in Milos can be hard to find, especially in the peak months of July and August. If you want to book your ride in advance or on demand, the best way is to download the Aegean Taxi app or use one of the other 3 methods to book your ride
 `,
       },
       {
         q: `Are Milos Taxis and Transfers safe in Milos?`,
-        a: `Yes. Milos is a cosidered to be a safe island with no major incidents ever reported related to taxis or transfers. Aegean Taxi employs only professional english speaking drivers who are pre-screened and trained to offer an excellent service`,
+        a: `Yes. Milos is a considered to be a safe island with no major incidents ever reported related to taxis or transfers. Aegean Taxi employs only professional english speaking drivers who are pre-screened and trained to offer an excellent service`,
       },
       {
         q: `Are taxis and transfers expensive in Milos?`,
@@ -133,7 +120,7 @@ To enable screen reader support, press ⌘+Option+Z To learn about keyboard shor
       },
       {
         q: `Do Taxi drivers speak English in Milos?`,
-        a: `Aegean Taxi hires only fluent English speakers so all drivers can speak English. It is a legal requirement for transport companies to obtain proof of English profficiency when hiring drivers. This does not apply to Taxi drivers who do not need to be speaking English to become drivers`,
+        a: `Aegean Taxi hires only fluent English speakers so all drivers can speak English. It is a legal requirement for transport companies to obtain proof of English proficiency when hiring drivers. This does not apply to Taxi drivers who do not need to be speaking English to become drivers`,
       },
       {
         q: `Do you have to tip taxis in Milos?`,
@@ -153,5 +140,160 @@ To enable screen reader support, press ⌘+Option+Z To learn about keyboard shor
       },
     ],
     photo: "./public/assets/taxi-milos.jpeg",
+  },
+  "tinos-taxi-app": {
+    name: "Tinos",
+
+    prices: [
+      {
+        from: "Tinos port",
+        to: "Pyrgos",
+        cost: "55",
+        duration: "45",
+        location: "port",
+      },
+      {
+        from: "Agios Romanos",
+        to: "Tinos port",
+        cost: "37",
+        duration: "25",
+        location: "city",
+      },
+      {
+        from: "Tinos port",
+        to: "Volax",
+        cost: "45",
+        duration: "30",
+        location: "port",
+      },
+      {
+        from: "Chora",
+        to: "Kolymbithra",
+        cost: "65",
+        duration: "50",
+        location: "city",
+      },
+      {
+        from: "Agios Sostis",
+        to: "Tinos port",
+        cost: "30",
+        duration: "50",
+        location: "port",
+      },
+    ],
+    reviews: [
+      {
+        flag: "america",
+        dateName: "Elijah - March 2023",
+        text: `Aegean Taxi offers a hassle-free service in Tinos. We booked our taxi rides with just a phone call and their call center confirmed all the details. The drivers were amaizing and with local knowledge.`,
+      },
+      {
+        flag: "spain",
+        text: `We used Aegean Taxi during our stay in Tinos. Every comunication was via Whatsapp and the best thing was being able to pin our location as there was some points where we were not entirely sure!  All drivers were amazing, very polite, and friendly. Definitely recommend and also make sure you book in advance`,
+        dateName: "Sergio - July 2022",
+      },
+      {
+        flag: "america",
+        dateName: "Mike - September 2019",
+        text: `Excellent service! We used them on many occasions and they are very professional. The app was very easy to use and very precise with ETA. Would recommend and use it again!`,
+      },
+    ],
+    faq: [
+      {
+        q: "How can i find a taxi or transfer in Tinos?",
+        a: "Apart from the designated taxi stands in the town center, port or airport, the best way is to use a private transfer service. Aegean Taxi offers a great fleet of cars at competitive prices, with english speaking drivers and is available 24/7. You can order a ride from www.aegeantaxi.com using the webapp in 3 simple steps, download the Aegean Taxi app, or simply call the call center on +302152154000",
+      },
+      {
+        q: "Is it easy to find a taxi in Tinos?",
+        a: "No. Taxis in Tinos can be hard to find, especially in the peak months of July and August. If you want to book your ride in advance or on demend, the best way is to download the Aegean Taxi app or use one of the other 3 methods to book your ride",
+      },
+      {
+        q: "Are Tinos Taxis and Transfers safe in Tinos?",
+        a: "Yes. Tinos is a cosidered to be a safe island with no major incidents ever reported related to taxis or transfers. Aegean Taxi employs only professional english speaking drivers who are pre-screened and trained to offer an excellent service",
+      },
+      {
+        q: "Are taxis and transfers expensive in Tinos?",
+        a: "Taxis in Tinos operate with a government mandated taxi meter, however it is possible to negotiate a flat fare with your driver. Private transfer services are available with a minimum €36 fare for half an hour which is the rate for a standard car. Vans tend to charge higher rates",
+      },
+      {
+        q: "Is Aegean Taxi working in Tinos?",
+        a: "Yes. Aegean Taxi is the leading taxi and transfer service in the island of Tinos. Tourists can download the Aegean Taxi app from the google or apple stores, register in 3 simple steps and requests rides in Tinos. Alternative booking methods include the website using the webapp, telephone booking or whatsapp",
+      },
+      {
+        q: "Do Taxi drivers speak English in Tinos?",
+        a: "Aegean Taxi hires only fluent English speakers so all drivers can speak English. It is a legal requirement for transport companies to obtain proof of English profficiency when hiring drivers. This does not apply to Taxi drivers who do not need to be speaking English to become drivers",
+      },
+      {
+        q: "Do you have to tip taxis in Tinos?",
+        a: "Tips are optional for transport providers in Tinos and one should not expect to have to pay anything extra than the pre arranged or metered fare. When extra services are provided by a driver like carrying luggage or stops along the way, then it is customary to reward drivers for the service",
+      },
+      {
+        q: "Do taxis run all day and night in Tinos?",
+        a: "Do taxis run all day and night in Tinos?",
+      },
+      {
+        q: "How can you find a Taxi in Tinos Port?",
+        a: "Aegean Taxi Operates to and from Tinos Port. You can arrange a ride in advance or upon arrival using either the Aegean Taxi Tinos App, whatsapp, the website or simply call our 24/7 call center to book your ride.",
+      },
+    ],
+    photo: "./public/assets/taxi-tinos.jpeg",
+  },
+  "paros-taxi-app": {
+    name: "Paros",
+    prices: [
+      {
+        from: "",
+        to: "",
+        cost: "",
+        duration: "",
+        location: "",
+      },
+    ],
+    reviews: [
+      {
+        flag: "french",
+        dateName: "Laura - March 2023",
+        text: `Booking a ride on Milos Island was very easy with the Web-based service provided by Aegean Taxi. The process is simple, and their professional drivers will ensure you have a comfortable and safe ride. They all speak English`,
+      },
+    ],
+    faq: [
+      {
+        q: "How can i find a taxi or transfer in Tinos?",
+        a: "Apart from the designated taxi stands in the town center, port or airport, the best way is to use a private transfer service. Aegean Taxi offers a great fleet of cars at competitive prices, with english speaking drivers and is available 24/7. You can order a ride from www.aegeantaxi.com using the webapp in 3 simple steps, download the Aegean Taxi app, or simply call the call center on +302152154000",
+      },
+      {
+        q: "Is it easy to find a taxi in Tinos?",
+        a: "No. Taxis in Tinos can be hard to find, especially in the peak months of July and August. If you want to book your ride in advance or on demend, the best way is to download the Aegean Taxi app or use one of the other 3 methods to book your ride",
+      },
+      {
+        q: "Are Tinos Taxis and Transfers safe in Tinos?",
+        a: "Yes. Tinos is a cosidered to be a safe island with no major incidents ever reported related to taxis or transfers. Aegean Taxi employs only professional english speaking drivers who are pre-screened and trained to offer an excellent service",
+      },
+      {
+        q: "Are taxis and transfers expensive in Tinos?",
+        a: "Taxis in Tinos operate with a government mandated taxi meter, however it is possible to negotiate a flat fare with your driver. Private transfer services are available with a minimum €36 fare for half an hour which is the rate for a standard car. Vans tend to charge higher rates",
+      },
+      {
+        q: "Is Aegean Taxi working in Tinos?",
+        a: "Yes. Aegean Taxi is the leading taxi and transfer service in the island of Tinos. Tourists can download the Aegean Taxi app from the google or apple stores, register in 3 simple steps and requests rides in Tinos. Alternative booking methods include the website using the webapp, telephone booking or whatsapp",
+      },
+      {
+        q: "Do Taxi drivers speak English in Tinos?",
+        a: "Aegean Taxi hires only fluent English speakers so all drivers can speak English. It is a legal requirement for transport companies to obtain proof of English profficiency when hiring drivers. This does not apply to Taxi drivers who do not need to be speaking English to become drivers",
+      },
+      {
+        q: "Do you have to tip taxis in Tinos?",
+        a: "Tips are optional for transport providers in Tinos and one should not expect to have to pay anything extra than the pre arranged or metered fare. When extra services are provided by a driver like carrying luggage or stops along the way, then it is customary to reward drivers for the service",
+      },
+      {
+        q: "Do taxis run all day and night in Tinos?",
+        a: "Do taxis run all day and night in Tinos?",
+      },
+      {
+        q: "How can you find a Taxi in Tinos Port?",
+        a: "Aegean Taxi Operates to and from Tinos Port. You can arrange a ride in advance or upon arrival using either the Aegean Taxi Tinos App, whatsapp, the website or simply call our 24/7 call center to book your ride.",
+      },
+    ],
+    photo: "./public/assets/taxi-tinos.jpeg",
   },
 };

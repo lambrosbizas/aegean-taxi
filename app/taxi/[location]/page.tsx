@@ -84,7 +84,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function Page({ params }: { params: Props }) {
   return (
     <>
-      <TaxiHeader />
+      <TaxiHeader location={location} />
       <WaysToRide />
       <TaxiBookingOptions />
       <SectionSpacer mdt={6}>
