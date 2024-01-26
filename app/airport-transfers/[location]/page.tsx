@@ -14,6 +14,7 @@ import SectionSpacer from "@/components/layout/sectionSpacer";
 import AirportFaq from "@/components/faq/airportFaq";
 import AirportFares from "@/components/airportFares/airportFares";
 import AirportGuides from "@/components/airportGuides/airportGuides";
+import { locationDetails } from "@/utils/locationDetails";
 
 export async function generateStaticParams() {
   const taxi = [
@@ -30,6 +31,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // read route params
   const location = params.location;
+  console.log("location", location);
   let title =
     "Aegean Taxi - Reliable and Affordable Athens Airport Transfer Services | Book Your Ride Today";
   let description =
@@ -57,6 +59,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description =
           "Book an experienced Santorini driver to pick you up. Cheapest prices, great cars, english speaking drivers, 24/7 customer support. Book online, via whatsapp, telephone, or through the App.";
         break;
+      default:
+        title = locationDetails.airports[location].meta.title;
+        description = locationDetails.airports[location].meta.description;
     }
   }
 

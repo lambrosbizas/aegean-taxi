@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import AthensGuide from "./athensGuide";
 import MykonosGuide from "./mykonosGuide";
 import SantoriniGuide from "./santoriniGuide";
+import AirportFares from "../airportFares/Fares";
 
 export default function TaxiFares() {
   const params: any = useParams();
@@ -14,6 +15,7 @@ export default function TaxiFares() {
       {location === "athens" && <AthensGuide />}
       {location === "mykonos" && <MykonosGuide />}
       {location === "santorini" && <SantoriniGuide />}
+      {<AirportFares location={location} />}
     </>
   );
 }

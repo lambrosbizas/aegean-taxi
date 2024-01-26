@@ -14,6 +14,7 @@ import TaxiReviews from "@/components/reviews/taxiReviews";
 import TaxiFares from "@/components/taxiFares/taxiFares";
 import TaxiFindUs from "@/components/findUs/taxiFindUs";
 import TaxiFaq from "@/components/faq/taxiFaq";
+import { locationDetails } from "@/utils/locationDetails";
 
 export async function generateStaticParams() {
   const taxi = [
@@ -67,11 +68,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description =
           "Book your Rhodes Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
         break;
-      case "milos":
-        title = "Milos Taxi App | Affordable Taxi rides | Available 24/7";
-        description =
-          "Book your Milos Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
-        break;
+      default:
+        title = locationDetails.taxi_locations[location].meta.title;
+        description = locationDetails.taxi_locations[location].meta.description;
     }
   }
 
@@ -84,7 +83,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function Page({ params }: { params: Props }) {
   return (
     <>
-      <TaxiHeader location={location} />
+      <TaxiHeader />
       <WaysToRide />
       <TaxiBookingOptions />
       <SectionSpacer mdt={6}>

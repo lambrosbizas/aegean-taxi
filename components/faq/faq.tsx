@@ -10,8 +10,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import { locationDetails } from "@/utils/locationDetails";
 
-export default function Faq({ location }: any) {
-  const data = locationDetails[location];
+export default function Faq({ location, type }: any) {
+  console.log("type", type);
+  const data = locationDetails[type][location];
 
   const QuestionList = ({ data }: any) => (
     <Accordion sx={{ py: { xs: 2, md: 1.5 } }}>

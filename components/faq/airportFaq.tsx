@@ -24,12 +24,12 @@ export default function AirportFaq() {
         reviewsComponent = <AirportSantoriniFaq />;
         break;
       default:
-        reviewsComponent = <Faq />;
+        reviewsComponent = <Faq location={params.location} type="airports" />;
         break;
     }
   }
 
   //FIXME: It seems that FAQ is the same for each page
   // return reviewsComponent;
-  return <Faq />;
+  return reviewsComponent;
 }

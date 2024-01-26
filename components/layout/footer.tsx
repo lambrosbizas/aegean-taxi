@@ -29,6 +29,7 @@ import Linkedin from "public/assets/linkedin.png";
 import Twitter from "public/assets/twitter.png";
 import whatsApp from "public/assets/whatsapp_btn.svg";
 import phoneIcon from "public/assets/phone-call-icon.svg";
+import { locationDetails } from "@/utils/locationDetails";
 
 export default function FooterLayout() {
   const pathname = usePathname();
@@ -63,6 +64,36 @@ export default function FooterLayout() {
     document.cookie = "aegeanShowCookies=false";
   };
 
+  const LinkItems = () =>
+    Object.values(locationDetails.taxi_locations).map((innerObject: any, i) => (
+      <ListItem key={i} sx={{ pl: 0 }}>
+        <MUILink
+          underline="none"
+          color="#fff"
+          href={innerObject.footer.link}
+          component={NextLink}
+          rel="canonical"
+          variant="body1"
+        >
+          {innerObject.footer.name}
+        </MUILink>
+      </ListItem>
+    ));
+  const LinkItemsAirport = () =>
+    Object.values(locationDetails.airports).map((innerObject: any, i) => (
+      <ListItem key={i} sx={{ pl: 0 }}>
+        <MUILink
+          underline="none"
+          color="#fff"
+          href={innerObject.footer.link}
+          component={NextLink}
+          rel="canonical"
+          variant="body1"
+        >
+          {innerObject.footer.name}
+        </MUILink>
+      </ListItem>
+    ));
   return (
     <footer className="footer">
       <Container maxWidth={"lg"} sx={{ pt: 4, zIndex: 9999 }}>
@@ -226,20 +257,10 @@ export default function FooterLayout() {
                       Rhodes
                     </MUILink>
                   </ListItem>
-                  <ListItem sx={{ pl: 0 }}>
-                    <MUILink
-                      underline="none"
-                      color="#fff"
-                      href="/taxi/milos-taxi-app/"
-                      component={NextLink}
-                      rel="canonical"
-                      variant="body1"
-                    >
-                      Milos
-                    </MUILink>
-                  </ListItem>
+                  <LinkItems />
                 </List>
               </Grid>
+              {/* AIRPORTS */}
               <Grid
                 item
                 xs={12}
@@ -290,6 +311,7 @@ export default function FooterLayout() {
                       JTR
                     </MUILink>
                   </ListItem>
+                  <LinkItemsAirport />
                 </List>
               </Grid>
             </Grid>

@@ -17,10 +17,19 @@ import Slider from "react-slick";
 //MUI
 
 import GB from "public/assets/flags/gb.svg";
-import IT from "public/assets/flags/it.svg";
 import US from "public/assets/flags/us.svg";
+import ES from "public/assets/flags/es.svg";
+import FR from "public/assets/flags/fr.svg";
 
-export default function AirportLandingReviews() {
+import { locationDetails } from "@/utils/locationDetails";
+
+export default function AirportLandingReviews({ location }: any) {
+  console.log("location", location);
+  const data =
+    location === "default"
+      ? locationDetails[location]
+      : locationDetails.airports[location];
+
   let settings = {
     dots: true,
     infinite: true,
@@ -45,6 +54,70 @@ export default function AirportLandingReviews() {
     ],
   };
 
+  const getFlag = (flag: string) => {
+    if (flag === "uk") {
+      return GB;
+    }
+    if (flag === "america") {
+      return US;
+    }
+    if (flag === "french") {
+      return FR;
+    }
+    if (flag === "spain") {
+      return ES;
+    }
+  };
+
+  const Review = ({ item }: any) => (
+    <Stack spacing={2} sx={{ p: 1 }}>
+      <Paper
+        sx={{
+          background: "#244284",
+          color: "#fff",
+        }}
+      >
+        <Box sx={{ p: 2 }}>
+          <Image src={getFlag(item.flag)} width={60} alt="GB" />
+          <Typography
+            variant="body1"
+            gutterBottom
+            sx={{
+              my: 2,
+              minHeight: { xs: "200px", md: "170px" },
+            }}
+          >
+            {item.text}
+          </Typography>
+
+          {/* User */}
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "baseline",
+            }}
+          >
+            <Box
+              component="span"
+              sx={{
+                alignSelf: "flex-end",
+                mt: 3,
+                p: 1,
+                px: 2,
+                textAlign: "center",
+                background: `#fff`,
+                borderRadius: 1,
+                color: "#000",
+              }}
+            >
+              {item.dateName}
+            </Box>
+          </Box>
+        </Box>
+      </Paper>
+    </Stack>
+  );
+
   return (
     <Container maxWidth={"lg"}>
       <Grid container spacing={0}>
@@ -61,8 +134,8 @@ export default function AirportLandingReviews() {
               mt: 5,
             }}
           >
-            What travelers who booked their
-            <br /> Airport transfer with Aegean Taxi say
+            What travelers who booked
+            <br /> a ride with Aegean Taxi say about us
           </Typography>
           <Typography
             component="h2"
@@ -75,160 +148,16 @@ export default function AirportLandingReviews() {
               // lineHeight: { xs: "48px", md: "68px" },
             }}
           >
-            What travelers who booked their Airport transfer with Aegean Taxi
-            say
+            What travelers who booked a ride with Aegean Taxi say about us
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
           {/* Slider */}
           <Box sx={{ my: 1, p: { xs: 2, md: 3 } }}>
             <Slider {...settings}>
-              <Stack spacing={2} sx={{ p: 1 }}>
-                <Paper
-                  sx={{
-                    background: "#244284",
-                    color: "#fff",
-                  }}
-                >
-                  <Box sx={{ p: 2 }}>
-                    <Image src={GB} width={60} alt="GB" />
-                    <Typography
-                      variant="body1"
-                      gutterBottom
-                      sx={{
-                        my: 2,
-                        minHeight: { xs: "200px", md: "190px" },
-                      }}
-                    >
-                      {`Aegean Taxi's app makes booking a breeze, and their
-                      professional drivers provide smooth rides to the airport.
-                      Competitive pricing and quality service make to reccomend
-                      them for airport transfers.`}
-                    </Typography>
-
-                    {/* User */}
-                    <Box
-                      sx={{
-                        display: "flex",
-                        alignItems: "baseline",
-                      }}
-                    >
-                      <Box
-                        component="span"
-                        sx={{
-                          alignSelf: "flex-end",
-                          mt: 3,
-                          p: 1,
-                          px: 2,
-                          textAlign: "center",
-                          background: `#fff`,
-                          borderRadius: 1,
-                          color: "#000",
-                        }}
-                      >
-                        Oliver - August 2021
-                      </Box>
-                    </Box>
-                  </Box>
-                </Paper>
-              </Stack>
-              <Stack spacing={2} sx={{ p: 1 }}>
-                <Paper
-                  sx={{
-                    background: "#2B6D95",
-                    color: "#fff",
-                  }}
-                >
-                  <Box sx={{ p: 2 }}>
-                    <Image src={IT} width={60} alt="IT" />
-                    <Typography
-                      variant="body1"
-                      gutterBottom
-                      sx={{
-                        my: 2,
-                        minHeight: { xs: "200px", md: "190px" },
-                      }}
-                    >
-                      Aegean Taxi provided a seamless experience for my airport
-                      transfer. Booking online was easy, the car was
-                      comfortable, and the driver was professional. Highly
-                      recommend!
-                    </Typography>
-
-                    {/* User */}
-                    <Box
-                      sx={{
-                        display: "flex",
-                        alignItems: "baseline",
-                      }}
-                    >
-                      <Box
-                        component="span"
-                        sx={{
-                          alignSelf: "flex-end",
-                          mt: 3,
-                          p: 1,
-                          px: 2,
-                          textAlign: "center",
-                          background: `#fff`,
-                          borderRadius: 1,
-                          color: "#000",
-                        }}
-                      >
-                        Marco - May 2022
-                      </Box>
-                    </Box>
-                  </Box>
-                </Paper>
-              </Stack>
-              <Stack spacing={2} sx={{ p: 1 }}>
-                <Paper
-                  sx={{
-                    background: "#244284",
-                    color: "#fff",
-                  }}
-                >
-                  <Box sx={{ p: 2 }}>
-                    <Image src={US} width={60} alt="US" />
-                    <Typography
-                      variant="body1"
-                      gutterBottom
-                      sx={{
-                        my: 2,
-                        minHeight: { xs: "200px", md: "190px" },
-                      }}
-                    >
-                      Choosing Aegean Taxi was a great decision for my airport
-                      transfer. I make the booking with a phone call, the price
-                      was fair, and the service was top-notch.
-                    </Typography>
-
-                    {/* User */}
-                    <Box
-                      sx={{
-                        display: "flex",
-                        alignItems: "baseline",
-                      }}
-                    >
-                      <Box
-                        component="span"
-                        sx={{
-                          alignSelf: "flex-end",
-                          mt: 3,
-                          p: 1,
-                          px: 2,
-                          textAlign: "center",
-                          background: `#fff`,
-                          borderRadius: 1,
-                          color: "#000",
-                        }}
-                      >
-                        James - August 2021
-                      </Box>
-                    </Box>
-                  </Box>
-                </Paper>
-              </Stack>
+              {data.reviews.map((item: any, i: number) => (
+                <Review key={i} item={item} />
+              ))}
             </Slider>
           </Box>
           {/* ./Slider */}

@@ -33,7 +33,9 @@ export default function TaxiFaq() {
         reviewsComponent = <TaxiRhodesFaq />;
         break;
       default:
-        reviewsComponent = <Faq location={params.location} />;
+        reviewsComponent = (
+          <Faq location={params.location} type="taxi_locations" />
+        );
         break;
     }
   }

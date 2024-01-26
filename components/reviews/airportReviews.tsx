@@ -24,7 +24,7 @@ export default function AirportReviews() {
         reviewsComponent = <AirportSantoriniReviews />;
         break;
       default:
-        reviewsComponent = <AirportLandingReviews />;
+        reviewsComponent = <AirportLandingReviews location={params.location} />;
         break;
     }
   }

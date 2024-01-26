@@ -11,7 +11,6 @@ import Fares from "./Fares";
 export default function TaxiFares() {
   const params: any = useParams();
   const location = params.location.toLowerCase();
-  const locations = ["milos-taxi-app"];
 
   return (
     <>
@@ -20,7 +19,7 @@ export default function TaxiFares() {
       {location === "santorini-taxi-app" && <SantoriniFares />}
       {location === "corfu-taxi-app" && <CorfuFares />}
       {location === "rhodes-taxi-app" && <RhodesFares />}
-      {locations.includes(location) && <Fares location={location} />}
+      {<Fares location={location} />}
     </>
   );
 }

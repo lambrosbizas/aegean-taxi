@@ -15,10 +15,8 @@ import PORT from "public/assets/port.svg";
 import CITY from "public/assets/city-centre.svg";
 import { locationDetails } from "../../utils/locationDetails";
 
-export default function Fares({ location }: any) {
-  console.log("location");
-  const data = locationDetails.taxi_locations[location];
-  console.log("data", data);
+export default function AirportFares({ location }: any) {
+  const data = locationDetails.airports[location];
 
   const getImage = (type: any) => {
     if (type === "airport") {

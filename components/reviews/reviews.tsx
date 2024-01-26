@@ -24,7 +24,10 @@ import FR from "public/assets/flags/fr.svg";
 import { locationDetails } from "@/utils/locationDetails";
 
 export default function Reviews({ location }: any) {
-  const data = locationDetails[location];
+  const data =
+    location === "default"
+      ? locationDetails[location]
+      : locationDetails.taxi_locations[location];
 
   let settings = {
     dots: true,

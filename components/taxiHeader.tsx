@@ -17,7 +17,7 @@ import Mykonos from "public/assets/taxi-mykonos.png";
 import Santorini from "public/assets/taxi-santorini.png";
 import Corfu from "public/assets/taxi-corfu.png";
 import Rhodes from "public/assets/taxi-rhodes.png";
-import Milos from "public/assets/taxi-milos.jpeg";
+import Milos from "public/assets/taxi-locations/taxi-milos.jpeg";
 
 import { locationDetails } from "@/utils/locationDetails";
 
