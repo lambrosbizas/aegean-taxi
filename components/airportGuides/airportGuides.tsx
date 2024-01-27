@@ -9,13 +9,14 @@ import AirportFares from "../airportFares/Fares";
 export default function TaxiFares() {
   const params: any = useParams();
   const location = params.location.toLowerCase();
+  const defaultList = ["athens", "mykonos", "santorini"];
 
   return (
     <>
       {location === "athens" && <AthensGuide />}
       {location === "mykonos" && <MykonosGuide />}
       {location === "santorini" && <SantoriniGuide />}
-      {<AirportFares location={location} />}
+      {!defaultList.includes(location) && <AirportFares location={location} />}
     </>
   );
 }

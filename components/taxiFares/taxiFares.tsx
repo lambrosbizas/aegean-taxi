@@ -11,6 +11,13 @@ import Fares from "./Fares";
 export default function TaxiFares() {
   const params: any = useParams();
   const location = params.location.toLowerCase();
+  let defaultList = [
+    "athens-taxi-app",
+    "mykonos-taxi-app",
+    "santorini-taxi-app",
+    "corfu-taxi-app",
+    "rhodes-taxi-app",
+  ];
 
   return (
     <>
@@ -19,7 +26,7 @@ export default function TaxiFares() {
       {location === "santorini-taxi-app" && <SantoriniFares />}
       {location === "corfu-taxi-app" && <CorfuFares />}
       {location === "rhodes-taxi-app" && <RhodesFares />}
-      {<Fares location={location} />}
+      {!defaultList.includes(location) && <Fares location={location} />}
     </>
   );
 }
