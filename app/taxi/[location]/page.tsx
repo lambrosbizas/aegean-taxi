@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "Taxi App, Affordable Taxi rides in Athens, Mykonos, Santorini | Available 24/7 ";
   let description =
     "The easiest way to book your taxi and transfer in Greece. Book in 2 simple steps. Quality cars, cheapest prices, english speaking drivers";
-  const locations = ["athens", "mykonos", "santorini"];
+  const locations = ["athens", "mykonos", "santorini", "corfu", "rhodes"];
 
   if (params.location) {
     const city = params.location.toLowerCase().replace("-taxi-app", "");
