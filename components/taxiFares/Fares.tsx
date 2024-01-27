@@ -17,7 +17,10 @@ import { locationDetails } from "../../utils/locationDetails";
 
 export default function Fares({ location }: any) {
   console.log("location");
-  const data = locationDetails.taxi_locations[location];
+  const data =
+    location === "default"
+      ? locationDetails[location]
+      : locationDetails.taxi_locations[location];
   console.log("data", data);
 
   const getImage = (type: any) => {

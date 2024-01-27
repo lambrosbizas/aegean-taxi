@@ -16,7 +16,10 @@ import CITY from "public/assets/city-centre.svg";
 import { locationDetails } from "../../utils/locationDetails";
 
 export default function AirportsFares({ location }: any) {
-  const data = locationDetails.airports[location];
+  const data =
+    location === "default"
+      ? locationDetails[location]
+      : locationDetails.airports[location];
 
   const getImage = (type: any) => {
     if (type === "airport") {
@@ -134,7 +137,7 @@ export default function AirportsFares({ location }: any) {
             py: 4,
           }}
         >
-          Indicative fares and travel times for {data.name}
+          Indicative fares and travel times for {data?.name}
           <br /> Hotspots
         </Typography>
       </Box>
@@ -151,14 +154,14 @@ export default function AirportsFares({ location }: any) {
           py: 3,
         }}
       >
-        Indicative fares and travel times for {data.name}
+        Indicative fares and travel times for {data?.name}
         <br /> Hotspots
       </Typography>
 
       {/* List */}
       <Container maxWidth="md" disableGutters>
         <Stack spacing={{ xs: 2, md: 3.2 }}>
-          {data.prices.map((data: any, i: any) => (
+          {data?.prices.map((data: any, i: any) => (
             <PricesMap key={i} dits={data} />
           ))}
         </Stack>
