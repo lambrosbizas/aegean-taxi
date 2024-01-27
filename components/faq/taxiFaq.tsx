@@ -10,8 +10,9 @@ import TaxiRhodesFaq from "@/components/faq/taxiRhodes";
 
 export default function TaxiFaq() {
   const params: any = useParams();
-  let reviewsComponent = <Faq />;
-
+  let reviewsComponent = (
+    <Faq location={params.location} type="taxi_locations" />
+  );
   if (params.location) {
     const city = (
       params.location.charAt(0).toUpperCase() + params.location.slice(1)

@@ -8,7 +8,7 @@ import AirportSantoriniFaq from "@/components/faq/airportSantorini";
 
 export default function AirportFaq() {
   const params: any = useParams();
-  let reviewsComponent = <Faq />;
+  let reviewsComponent = <Faq location={params.location} type="airports" />;
 
   if (params.location) {
     const city =
