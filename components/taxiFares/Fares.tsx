@@ -16,7 +16,7 @@ import CITY from "public/assets/city-centre.svg";
 import { locationDetails } from "../../utils/locationDetails";
 
 export default function Fares({ location }: any) {
-  console.log("location");
+  console.log("location", location);
   const data =
     location === "default"
       ? locationDetails[location]
