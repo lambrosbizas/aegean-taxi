@@ -24,7 +24,6 @@ import FR from "public/assets/flags/fr.svg";
 import { locationDetails } from "@/utils/locationDetails";
 
 export default function AirportLandingReviews({ location }: any) {
-  console.log("location", location);
   const data =
     location === "default"
       ? locationDetails[location]
@@ -155,7 +154,7 @@ export default function AirportLandingReviews({ location }: any) {
           {/* Slider */}
           <Box sx={{ my: 1, p: { xs: 2, md: 3 } }}>
             <Slider {...settings}>
-              {data.reviews.map((item: any, i: number) => (
+              {data?.reviews.map((item: any, i: number) => (
                 <Review key={i} item={item} />
               ))}
             </Slider>

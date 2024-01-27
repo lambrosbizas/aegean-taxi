@@ -15,7 +15,7 @@ import PORT from "public/assets/port.svg";
 import CITY from "public/assets/city-centre.svg";
 import { locationDetails } from "../../utils/locationDetails";
 
-export default function AirportFares({ location }: any) {
+export default function AirportsFares({ location }: any) {
   const data = locationDetails.airports[location];
 
   const getImage = (type: any) => {
