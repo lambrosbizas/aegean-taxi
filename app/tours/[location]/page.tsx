@@ -13,12 +13,19 @@ import ToursReviews from "@/components/reviews/toursReviews";
 import MeetOurDrivers from "@/components/meetOurDrivers/meetOurDrivers";
 import ToursTopSights from "@/components/toursTopSights/toursTopSights";
 import SectionSpacer from "@/components/layout/sectionSpacer";
+import { locationDetails } from "@/utils/locationDetails";
 
 export async function generateStaticParams() {
+  const locations = Object.values(locationDetails.airports).map(
+    (innerObject: any) => {
+      return { location: innerObject.location };
+    }
+  );
   const taxi = [
     { location: "athens" },
     { location: "mykonos" },
     { location: "santorini" },
+    [...locations],
   ];
 
   return taxi.map((taxi: any) => ({

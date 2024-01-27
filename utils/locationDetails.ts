@@ -27,6 +27,7 @@ Booking a ride on Milos Island was very easy with the Web-based service provided
   },
   taxi_locations: {
     "milos-taxi-app": {
+      location: "milos-taxi-app",
       name: "Milos",
       prices: [
         {
@@ -151,6 +152,8 @@ Booking a ride on Milos Island was very easy with the Web-based service provided
   },
   airports: {
     milos: {
+      location: "milos",
+
       meta: {
         title:
           "Aegean Taxi - Reliable and Affordable Milos Airport Transfer Services | Book Your Ride Today",

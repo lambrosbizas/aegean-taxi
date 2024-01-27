@@ -17,11 +17,19 @@ import AirportGuides from "@/components/airportGuides/airportGuides";
 import { locationDetails } from "@/utils/locationDetails";
 
 export async function generateStaticParams() {
+  const locations = Object.values(locationDetails.airports).map(
+    (innerObject: any) => {
+      return { location: innerObject.location };
+    }
+  );
   const taxi = [
     { location: "athens" },
     { location: "mykonos" },
     { location: "santorini" },
+    [...locations],
   ];
+
+  console.log("locations---generateStaticParams", JSON.stringify(taxi));
 
   return taxi.map((taxi: any) => ({
     location: taxi.location,

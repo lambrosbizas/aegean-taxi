@@ -17,13 +17,18 @@ import TaxiFaq from "@/components/faq/taxiFaq";
 import { locationDetails } from "@/utils/locationDetails";
 
 export async function generateStaticParams() {
+  const locations = Object.values(locationDetails.airports).map(
+    (innerObject: any) => {
+      return { location: innerObject.location };
+    }
+  );
   const taxi = [
     { location: "athens-taxi-app" },
     { location: "mykonos-taxi-app" },
     { location: "santorini-taxi-app" },
     { location: "corfu-taxi-app" },
     { location: "rhodes-taxi-app" },
-    { location: "milos-taxi-app" },
+    [...locations],
   ];
 
   return taxi.map((taxi: any) => ({
