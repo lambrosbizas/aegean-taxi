@@ -23,9 +23,6 @@ export default function AirportFaq() {
       case "Santorini":
         reviewsComponent = <AirportSantoriniFaq />;
         break;
-      default:
-        reviewsComponent = <Faq location={params.location} type="airports" />;
-        break;
     }
   }
 
