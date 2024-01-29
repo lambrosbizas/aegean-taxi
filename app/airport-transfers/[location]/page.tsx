@@ -26,7 +26,7 @@ export async function generateStaticParams() {
     { location: "athens" },
     { location: "mykonos" },
     { location: "santorini" },
-    [...locations],
+    ...locations,
   ];
 
   console.log("locations---generateStaticParams", JSON.stringify(taxi));
