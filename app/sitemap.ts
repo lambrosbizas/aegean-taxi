@@ -1,7 +1,30 @@
+import { locationDetails } from "@/utils/locationDetails";
 import { MetadataRoute } from "next";
+
+const locationsAirportTransfers = Object.values(locationDetails.airports).map(
+  (innerObject: any) => {
+    return {
+      url: `https://aegeantaxi.com/airport-transfers/${innerObject.location}/`,
+      lastModified: new Date(),
+    };
+  }
+);
+
+const locationsTaxi = Object.values(locationDetails.airports).map(
+  (innerObject: any) => {
+    return {
+      url: `https://aegeantaxi.com/taxi/${innerObject.location}`,
+      lastModified: new Date(),
+    };
+  }
+);
+
+console.log("sitemap-air", locationsAirportTransfers);
+console.log("sitemap-tra", locationsTaxi);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    ...locationsTaxi,
     {
       url: "https://aegeantaxi.com/",
       lastModified: new Date(),
@@ -16,6 +39,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://aegeantaxi.com/taxi/athens-taxi-app/",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://aegeantaxi.com/taxi/milos-taxi-app/",
       lastModified: new Date(),
     },
     {
@@ -50,6 +77,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://aegeantaxi.com/airport-transfers/santorini/",
       lastModified: new Date(),
     },
+    {
+      url: "https://aegeantaxi.com/airport-transfers/milos/",
+      lastModified: new Date(),
+    },
+    ...locationsAirportTransfers,
     {
       url: "https://aegeantaxi.com/tours/",
       lastModified: new Date(),
