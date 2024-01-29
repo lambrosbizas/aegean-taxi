@@ -10,7 +10,7 @@ import TaxiRhodesReviews from "@/components/reviews/taxiRhodes";
 
 export default function TaxiReviews() {
   const params: any = useParams();
-  let reviewsComponent = <Reviews />;
+  let reviewsComponent = <Reviews location={params.location} />;
 
   if (params.location) {
     const city = (

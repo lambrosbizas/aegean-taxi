@@ -154,7 +154,7 @@ export default function Reviews({ location }: any) {
           {/* Slider */}
           <Box sx={{ my: 1, p: { xs: 2, md: 3 } }}>
             <Slider {...settings}>
-              {data.reviews.map((item: any, i: number) => (
+              {data?.reviews.map((item: any, i: number) => (
                 <Review key={i} item={item} />
               ))}
             </Slider>

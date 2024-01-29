@@ -139,7 +139,7 @@ export default function Fares({ location }: any) {
             py: 4,
           }}
         >
-          Indicative fares and travel times for {data.name}
+          Indicative fares and travel times for {data?.name}
           <br /> Hotspots
         </Typography>
       </Box>
@@ -156,14 +156,14 @@ export default function Fares({ location }: any) {
           py: 3,
         }}
       >
-        Indicative fares and travel times for {data.name}
+        Indicative fares and travel times for {data?.name}
         <br /> Hotspots
       </Typography>
 
       {/* List */}
       <Container maxWidth="md" disableGutters>
         <Stack spacing={{ xs: 2, md: 3.2 }}>
-          {data.prices.map((data: any, i: any) => (
+          {data?.prices.map((data: any, i: any) => (
             <PricesMap key={i} dits={data} />
           ))}
         </Stack>
