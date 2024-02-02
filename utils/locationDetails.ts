@@ -5,10 +5,6 @@ export const locationDetails: any = {
         flag: "french",
         dateName: "Laura - March 2023",
         text: `
-Aegean taxi new design
-100%
-E53
-
 Booking a ride on Milos Island was very easy with the Web-based service provided by Aegean Taxi. The process is simple, and their professional drivers will ensure you have a comfortable and safe ride. They all speak English`,
       },
       {
