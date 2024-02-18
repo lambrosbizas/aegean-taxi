@@ -298,7 +298,7 @@ export default function AirportLocations() {
                   <Stack key={i} spacing={2} sx={{ textAlign: "center", p: 1 }}>
                     <MUILink
                       underline="none"
-                      href={innerObject?.slide?.href}
+                      href={innerObject?.slide?.href || ""}
                       component={NextLink}
                     >
                       <Paper>
