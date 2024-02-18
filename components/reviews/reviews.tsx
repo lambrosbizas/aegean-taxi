@@ -74,6 +74,7 @@ export default function Reviews({ location }: any) {
         sx={{
           background: "#244284",
           color: "#fff",
+          minHeight: "500px",
         }}
       >
         <Box sx={{ p: 2 }}>
@@ -107,6 +108,8 @@ export default function Reviews({ location }: any) {
                 background: `#fff`,
                 borderRadius: 1,
                 color: "#000",
+                position: "absolute",
+                bottom: "30px",
               }}
             >
               {item.dateName}
