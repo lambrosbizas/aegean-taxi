@@ -23,6 +23,7 @@ import MAP from "public/assets/locations-map.png";
 import ATHENS from "public/assets/Athens.png";
 import MYKONOS from "public/assets/Mykonos.png";
 import SANTORINI from "public/assets/Santorini.png";
+import { locationDetails } from "@/utils/locationDetails";
 
 export default function AirportLocations() {
   let settings = {
@@ -292,6 +293,55 @@ export default function AirportLocations() {
                   </Paper>
                 </MUILink>
               </Stack>
+              {Object.values(locationDetails.airports).map(
+                (innerObject: any, i) => (
+                  <Stack key={i} spacing={2} sx={{ textAlign: "center", p: 1 }}>
+                    <MUILink
+                      underline="none"
+                      href={innerObject?.slide?.href}
+                      component={NextLink}
+                    >
+                      <Paper>
+                        <Box sx={{ p: 2 }}>
+                          <Typography
+                            component={"div"}
+                            variant="h5"
+                            gutterBottom
+                            sx={{
+                              fontWeight: 500,
+                              mb: 2,
+                              textAlign: { xs: "left", md: "center" },
+                            }}
+                          >
+                            {innerObject?.slide?.name}
+                          </Typography>
+                          <Box
+                            sx={{
+                              minHeight: { xs: 224, md: 345 },
+                              backgroundImage: `url(${innerObject?.slide?.photo})`,
+                              backgroundSize: "cover",
+                              mb: 3,
+                              borderRadius: 3,
+                            }}
+                          ></Box>
+                          <Typography
+                            component="span"
+                            variant="body1"
+                            sx={{
+                              mt: 3,
+                              lineHeight: 3,
+                              borderBottom: `3px solid #000`,
+                              width: "75px",
+                            }}
+                          >
+                            Find a ride
+                          </Typography>
+                        </Box>
+                      </Paper>
+                    </MUILink>
+                  </Stack>
+                )
+              )}
             </Slider>
           </Box>
           {/* ./Slider */}
