@@ -72,8 +72,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           break;
       }
     } else {
-      title = locationDetails.airports[location].meta.title;
-      description = locationDetails.airports[location].meta.description;
+      title = locationDetails.airports[location]?.meta.title;
+      description = locationDetails.airports[location]?.meta.description;
     }
   }
 
