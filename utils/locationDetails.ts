@@ -949,7 +949,7 @@ If you choose a taximeter-based fare, ensure the driver resets it to the base fa
 
 Safe and Efficient Travel
 Exploring the wonders of Milos Island becomes a seamless experience when you rely on its well-regulated taxi services. Whether you're indulging in a leisurely vacation or have a packed itinerary, Milos taxis offer the ideal blend of convenience and efficiency for your island adventure.
-`,
+`, //// add rest locations
         transportation: {
           heading: "Public Transportation Information",
           info: `During the summer season public transportation (bus) is available. The Airport station is about 100m away from the Airport.
@@ -1048,9 +1048,9 @@ Exploring the wonders of Milos Island becomes a seamless experience when you rel
         },
       ],
       slide: {
-        name: "Milos",
-        photo: "/assets/taxi-locations/taxi-milos.jpeg",
-        href: "/airport-transfers/milos/",
+        name: "Paros",
+        photo: "/assets/taxi-locations/taxi-paros.jpeg",
+        href: "/airport-transfers/paros/",
       },
       airport_Guide: {
         title: "Airport services",
@@ -1180,7 +1180,7 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
       slide: {
         name: "Naxos",
         photo: "/assets/taxi-locations/taxi-naxos.jpeg",
-        href: "/airport-transfers/milos/",
+        href: "/airport-transfers/naxos/",
       },
       airport_Guide: {
         title: "Airport services",
@@ -1438,10 +1438,11 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
           text: `They were incredible. Very fast to respond and easy to book on short notice. Helped us get to the airport and were right on time for both trips. Beautiful cars and lovely drivers. Highly recommend this for easy transfers in Naxos. Thank you!`,
         },
       ],
+
       slide: {
         name: "Rhodes",
-        photo: "/assets/taxi-locations/taxi-milos.jpeg",
-        href: "/airport-transfers/milos/",
+        photo: "/assets/taxi-locations/taxi-rhodes.jpeg", // photo needed
+        href: "/airport-transfers/rhodes/",
       },
 
       airport_Guide: {
@@ -1832,8 +1833,8 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
       ],
       slide: {
         name: "Corfu",
-        photo: "/assets/taxi-locations/taxi-milos.jpeg",
-        href: "/airport-transfers/milos/",
+        photo: "/assets/taxi-locations/taxi-corfu.jpeg", // photo needed
+        href: "/airport-transfers/corfu/",
       },
       airport_Guide: {
         title: "Airport services",
