@@ -1251,7 +1251,7 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
     },
 
     heraklion: {
-      location: "heraklion",
+      location: "Heraklion",
       meta: {
         title:
           "Aegean Taxi - Reliable and Affordable Heraklion Airport Transfer Services | Book Your Ride Today",
