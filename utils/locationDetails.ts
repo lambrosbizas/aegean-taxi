@@ -852,7 +852,7 @@ Booking a ride on Milos Island was very easy with the Web-based service provided
   },
   airports: {
     milos: {
-      location: "milos",
+      location: "Milos",
       meta: {
         title:
           "Aegean Taxi - Reliable and Affordable Milos Airport Transfer Services | Book Your Ride Today",
@@ -991,7 +991,7 @@ Exploring the wonders of Milos Island becomes a seamless experience when you rel
     },
 
     paros: {
-      location: "Paros",
+      location: "paros",
 
       meta: {
         title:
@@ -1251,8 +1251,7 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
     },
 
     heraklion: {
-      location: "Heraklion",
-
+      location: "heraklion",
       meta: {
         title:
           "Aegean Taxi - Reliable and Affordable Heraklion Airport Transfer Services | Book Your Ride Today",
@@ -1376,7 +1375,7 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
       photo: "./public/assets/taxi-locations/taxi-Heraklion.jpeg",
       url: "airport-transfers/heraklion/",
       footer: {
-        link: "/airport-transfers/heraklion/",
+        link: "/airport-transfers/Heraklion/",
         name: "Heraklion",
       },
     },
