@@ -38,7 +38,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // read route params
-  const location = params.location;
+  const location = params.location.toLowerCase();
   console.log("location----", location);
   let title =
     "Aegean Taxi - Reliable and Affordable Athens Airport Transfer Services | Book Your Ride Today";

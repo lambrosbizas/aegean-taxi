@@ -852,7 +852,7 @@ Booking a ride on Milos Island was very easy with the Web-based service provided
   },
   airports: {
     milos: {
-      location: "Milos",
+      location: "milos",
       meta: {
         title:
           "Aegean Taxi - Reliable and Affordable Milos Airport Transfer Services | Book Your Ride Today",
@@ -1112,16 +1112,16 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
 `,
         },
       ],
-      photo: "./public/assets/taxi-locations/taxi-Paros.jpeg",
+      photo: "./public/assets/taxi-locations/taxi-paros.jpeg",
       url: "airport-transfers/Paros/",
       footer: {
-        link: "/airport-transfers/Paros/",
+        link: "/airport-transfers/paros/",
         name: "Paros",
       },
     },
 
     naxos: {
-      location: "Naxos",
+      location: "naxos",
 
       meta: {
         title:
@@ -1242,16 +1242,16 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
 `,
         },
       ],
-      photo: "./public/assets/taxi-locations/taxi-Naxos.jpeg",
+      photo: "./public/assets/taxi-locations/taxi-naxos.jpeg",
       url: "airport-transfers/Naxos/",
       footer: {
-        link: "/airport-transfers/Naxos/",
+        link: "/airport-transfers/naxos/",
         name: "Naxos",
       },
     },
 
     heraklion: {
-      location: "Heraklion",
+      location: "heraklion",
       meta: {
         title:
           "Aegean Taxi - Reliable and Affordable Heraklion Airport Transfer Services | Book Your Ride Today",
@@ -1372,7 +1372,7 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
 `,
         },
       ],
-      photo: "./public/assets/taxi-locations/taxi-Heraklion.jpeg",
+      photo: "./public/assets/taxi-locations/taxi-heraklion.jpeg",
       url: "airport-transfers/heraklion/",
       footer: {
         link: "/airport-transfers/Heraklion/",
@@ -1381,7 +1381,7 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
     },
 
     rhodes: {
-      location: "Rhodes",
+      location: "rhodes",
 
       meta: {
         title:
@@ -1504,16 +1504,16 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
 `,
         },
       ],
-      photo: "./public/assets/taxi-locations/taxi-Rhodes.jpeg",
+      photo: "./public/assets/taxi-locations/taxi-rhodes.jpeg",
       url: "airport-transfers/Rhodes/",
       footer: {
-        link: "/airport-transfers/Rhodes/",
+        link: "/airport-transfers/rhodes/",
         name: "Rhodes",
       },
     },
 
     kos: {
-      location: "Kos",
+      location: "kos",
 
       meta: {
         title:
@@ -1635,16 +1635,16 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
 `,
         },
       ],
-      photo: "./public/assets/taxi-locations/taxi-Kos.jpeg",
+      photo: "./public/assets/taxi-locations/taxi-kos.jpeg",
       url: "airport-transfers/Kos/",
       footer: {
-        link: "/airport-transfers/Kos/",
+        link: "/airport-transfers/kos/",
         name: "Kos",
       },
     },
 
     chalkidiki: {
-      location: "Chalkidiki",
+      location: "chalkidiki",
 
       meta: {
         title:
@@ -1765,16 +1765,16 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
 `,
         },
       ],
-      photo: "./public/assets/taxi-locations/taxi-Chalkidiki.jpeg",
-      url: "airport-transfers/Chalkidiki/",
+      photo: "./public/assets/taxi-locations/taxi-chalkidiki.jpeg",
+      url: "airport-transfers/chalkidiki/",
       footer: {
-        link: "/airport-transfers/Chalkidiki/",
+        link: "/airport-transfers/chalkidiki/",
         name: "Chalkidiki",
       },
     },
 
     corfu: {
-      location: "Corfu",
+      location: "corfu",
 
       meta: {
         title:
@@ -1895,10 +1895,10 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
 `,
         },
       ],
-      photo: "./public/assets/taxi-locations/taxi-Corfu.jpeg",
-      url: "airport-transfers/Corfu/",
+      photo: "./public/assets/taxi-locations/taxi-corfu.jpeg",
+      url: "airport-transfers/corfu/",
       footer: {
-        link: "/airport-transfers/Corfu/",
+        link: "/airport-transfers/corfu/",
         name: "Corfu",
       },
     },

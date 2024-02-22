@@ -8,8 +8,8 @@ import CorfuFares from "./corfuFares";
 import RhodesFares from "./rhodesFares";
 import Fares from "./Fares";
 
-export default function TaxiFares() {
-  const params: any = useParams();
+export default function TaxiFares({ params }: any) {
+  console.log("TaxiFares", params);
   const location = params.location.toLowerCase();
   let defaultList = [
     "athens-taxi-app",

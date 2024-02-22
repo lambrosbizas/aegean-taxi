@@ -99,7 +99,7 @@ export default function Page({ params }: { params: Props }) {
       </SectionSpacer>
       <TaxiReviews />
       <TaxiFindUs />
-      <TaxiFares />
+      <TaxiFares params={params} />
       <TaxiFaq />
     </>
   );

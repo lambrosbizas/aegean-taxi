@@ -13,7 +13,7 @@ const locationsAirportTransfers = Object.values(locationDetails.airports).map(
 const locationsTaxi = Object.values(locationDetails.airports).map(
   (innerObject: any) => {
     return {
-      url: `https://aegeantaxi.com/taxi/${innerObject.location}`,
+      url: `https://aegeantaxi.com/taxi/${innerObject.location}/`,
       lastModified: new Date(),
     };
   }
