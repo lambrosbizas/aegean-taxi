@@ -438,7 +438,7 @@ export default function VerificationComponent({}: {}) {
   const bookingContext = useContext<any>(AppContext);
   const bookingState: BookingState = bookingContext.state;
 
-  const { data, error } = useSWR({}, tokenFetcher);
+  // const { data, error } = useSWR({}, tokenFetcher);
 
   const { getItem } = useStorage();
   const { setItem } = useStorage();
@@ -450,20 +450,20 @@ export default function VerificationComponent({}: {}) {
     }
   }, []);
 
-  useEffect(() => {
-    // if (aegeanState) {
-    //   bookingContext.updateAppState(aegeanState);
-    // }
+  // useEffect(() => {
+  //   // if (aegeanState) {
+  //   //   bookingContext.updateAppState(aegeanState);
+  //   // }
 
-    if (bookingState && data && !bookingState.apiToken) {
-      bookingState.apiToken = data.access_token;
-      setItem("aegean", bookingState, "local");
-    }
-    return () => {};
-  }, [bookingState, data]);
+  //   if (bookingState && data && !bookingState.apiToken) {
+  //     bookingState.apiToken = data.access_token;
+  //     setItem("aegean", bookingState, "local");
+  //   }
+  //   return () => {};
+  // }, [bookingState, data]);
 
-  if (error) return <div>There was an error loading the app</div>;
-  if (!data) return <div>Loading...</div>;
+  // if (error) return <div>There was an error loading the app</div>;
+  // if (!data) return <div>Loading...</div>;
 
   const handleChange = (event: SelectChangeEvent) => {
     setCountryCode(event.target.value as string);
