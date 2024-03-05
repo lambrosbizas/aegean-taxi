@@ -10,7 +10,7 @@ const locationsAirportTransfers = Object.values(locationDetails.airports).map(
   }
 );
 
-const locationsTaxi = Object.values(locationDetails.airports).map(
+const locationsTaxi = Object.values(locationDetails.taxi_locations).map(
   (innerObject: any) => {
     return {
       url: `https://aegeantaxi.com/taxi/${innerObject.location}/`,
@@ -24,7 +24,6 @@ console.log("sitemap-tra", locationsTaxi);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...locationsTaxi,
     {
       url: "https://aegeantaxi.com/",
       lastModified: new Date(),
@@ -39,10 +38,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://aegeantaxi.com/taxi/athens-taxi-app/",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://aegeantaxi.com/taxi/milos-taxi-app/",
       lastModified: new Date(),
     },
     {
@@ -61,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://aegeantaxi.com/taxi/rhodes-taxi-app/",
       lastModified: new Date(),
     },
+    ...locationsTaxi,
     {
       url: "https://aegeantaxi.com/airport-transfers/",
       lastModified: new Date(),
@@ -75,10 +71,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://aegeantaxi.com/airport-transfers/santorini/",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://aegeantaxi.com/airport-transfers/milos/",
       lastModified: new Date(),
     },
     ...locationsAirportTransfers,
