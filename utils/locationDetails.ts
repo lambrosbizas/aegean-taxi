@@ -1375,7 +1375,7 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
       photo: "./public/assets/taxi-locations/taxi-heraklion.jpeg",
       url: "airport-transfers/heraklion/",
       footer: {
-        link: "/airport-transfers/Heraklion/",
+        link: "/airport-transfers/heraklion/",
         name: "Heraklion",
       },
     },

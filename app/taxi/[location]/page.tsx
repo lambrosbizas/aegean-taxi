@@ -15,6 +15,7 @@ import TaxiFares from "@/components/taxiFares/taxiFares";
 import TaxiFindUs from "@/components/findUs/taxiFindUs";
 import TaxiFaq from "@/components/faq/taxiFaq";
 import { locationDetails } from "@/utils/locationDetails";
+import { loadComponents } from "next/dist/server/load-components";
 
 export async function generateStaticParams() {
   const locations = Object.values(locationDetails.taxi_locations).map(
@@ -48,37 +49,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (params.location) {
     const city = params.location.toLowerCase().replace("-taxi-app", "");
 
-    switch (city) {
-      case "athens":
-        title = "Athens Taxi App | Affordable Taxi rides | Available 24/7";
-        description =
-          "Book your Athens Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
-        break;
-      case "mykonos":
-        title = "Mykonos Taxi App | Affordable Taxi rides | Available 24/7";
-        description =
-          "Book your Mykonos Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
-        break;
-      case "santorini":
-        title = "Santorini Taxi App | Affordable Taxi rides | Available 24/7";
-        description =
-          "Book your Santorini Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
-        break;
-      case "corfu":
-        title = "Corfu Taxi App | Affordable Taxi rides | Available 24/7";
-        description =
-          "Book your Corfu Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
-        break;
-      case "rhodes":
-        title = "Rhodes Taxi App | Affordable Taxi rides | Available 24/7";
-        description =
-          "Book your Rhodes Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
-        break;
-      default:
-        title = "Rhodes Taxi App | Affordable Taxi rides | Available 24/7";
-        description =
-          "Book your Rhodes Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
-        break;
+    if (!locations.includes(city)) {
+      const data = locationDetails.taxi_locations[params.location].meta;
+      title = data.title;
+      description = data.description;
+    } else {
+      switch (city) {
+        case "athens":
+          title = "Athens Taxi App | Affordable Taxi rides | Available 24/7";
+          description =
+            "Book your Athens Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
+          break;
+        case "mykonos":
+          title = "Mykonos Taxi App | Affordable Taxi rides | Available 24/7";
+          description =
+            "Book your Mykonos Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
+          break;
+        case "santorini":
+          title = "Santorini Taxi App | Affordable Taxi rides | Available 24/7";
+          description =
+            "Book your Santorini Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
+          break;
+        case "corfu":
+          title = "Corfu Taxi App | Affordable Taxi rides | Available 24/7";
+          description =
+            "Book your Corfu Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
+          break;
+        case "rhodes":
+          title = "Rhodes Taxi App | Affordable Taxi rides | Available 24/7";
+          description =
+            "Book your Rhodes Taxi via telephone, whatsapp, website. Or download the Aegean Taxi app and request a ride in 2 simple steps. ";
+          break;
+      }
     }
   }
 

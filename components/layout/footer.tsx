@@ -204,7 +204,7 @@ export default function FooterLayout() {
                   variant="h6"
                   sx={{ borderBottom: "2px #fff solid" }}
                 >
-                  Location
+                  Locations
                 </Typography>
                 <List>
                   <ListItem sx={{ pl: 0 }}>
