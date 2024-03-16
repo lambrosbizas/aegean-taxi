@@ -530,7 +530,7 @@ export default function FooterLayout() {
             position: "fixed",
             width: "100%",
             bottom: 0,
-            zIindex: 99999,
+            zIndex: 99999,
           }}
           severity="info"
           onClose={hideCookiesBanner}

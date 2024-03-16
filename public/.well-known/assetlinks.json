@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "aegean.taxi.ride.app.mykonos.santorini.athens.greece.passenger",
+            "sha256_cert_fingerprints": [
+                "EC:A1:CC:4E:B1:97:AD:A7:88:4B:F6:94:A5:7A:3B:11:29:2E:7D:13:B9:01:E6:FB:8D:DD:A0:B9:AF:1C:FF:0C"
+            ]
+        }
+    }
+]
