@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import ReadMoreReact from "read-more-react";
 // MUI
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -8,6 +8,7 @@ import Grid from "@mui/material/Grid"; // Grid version 1
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+// import LinesEllipsis from "react-lines-ellipsis";
 
 // slick
 // import "slick-carousel/slick/slick.css";
@@ -24,10 +25,10 @@ import FR from "public/assets/flags/fr.svg";
 import { locationDetails } from "@/utils/locationDetails";
 
 export default function AirportLandingReviews({ location }: any) {
-  const data =
-    location === "default"
-      ? locationDetails[location]
-      : locationDetails.airports[location];
+  console.log("AirportLandingReviews", location);
+  const data = location
+    ? locationDetails.airports[location]
+    : locationDetails.default;
 
   let settings = {
     dots: true,
@@ -83,10 +84,16 @@ export default function AirportLandingReviews({ location }: any) {
             gutterBottom
             sx={{
               my: 2,
-              minHeight: { xs: "200px", md: "170px" },
+              // minHeight: { xs: "200px", md: "170px" },
             }}
           >
-            {item.text}
+            <ReadMoreReact
+              text={item.text}
+              min={60}
+              ideal={80}
+              max={81}
+              readMoreText={"Read more..."}
+            />
           </Typography>
 
           {/* User */}

@@ -5,9 +5,7 @@ export const locationDetails: any = {
         flag: "french",
         dateName: "Laura - March 2023",
         text: `
-Aegean taxi new design
-100%
-E53
+
 
 Booking a ride on Milos Island was very easy with the Web-based service provided by Aegean Taxi. The process is simple, and their professional drivers will ensure you have a comfortable and safe ride. They all speak English`,
       },
@@ -1087,6 +1085,19 @@ If you choose a taximeter-based fare, ensure the driver resets it to the base fa
 Safe and Efficient Travel
 Exploring the wonders of Paros Island becomes a seamless experience when you rely on its well-regulated taxi services. Whether you're indulging in a leisurely vacation or have a packed itinerary, Paros taxis offer the ideal blend of convenience and efficiency for your island adventure.
 `,
+        transportation: {
+          heading: "Public Transportation Information",
+          info: `For travelers arriving at Paros Airport, convenient bus services are available to connect you to the island's main towns and beaches. The buses run regularly throughout the day, and the schedule may vary depending on the season, so it's advisable to check the current timetable online or at the airport upon arrival. The cost of a one-way ticket is typically around €5, making it an affordable transportation option. 
+The journey from Paros Airport to popular destinations like Parikia or Naoussa takes approximately 20-30 minutes. For the most up-to-date information, you can visit the official website of Paros public buses at www.ktelparou.gr. 
+ 
+ 
+ 	
+For travelers arriving at Paros Airport, convenient bus services are available to connect you to the island's main towns and beaches. The buses run regularly throughout the day, and the schedule may vary depending on the season, so it's advisable to check the current timetable online or at the airport upon arrival. The cost of a one-way ticket is typically around €5, making it an affordable transportation option. 
+The journey from Paros Airport to popular destinations like Parikia or Naoussa takes approximately 20-30 minutes. For the most up-to-date information, you can visit the official website of Paros public buses at www.ktelparou.gr. 
+          `,
+          link_title: "More information may be found at the following link:",
+          link: "https://www.ktelparou.gr.",
+        },
       },
 
       faq: [
@@ -1217,6 +1228,12 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
           Safe and Efficient Travel
           Exploring the wonders of Naxos Island becomes a seamless experience when you rely on its well-regulated taxi services. Whether you're indulging in a leisurely vacation or have a packed itinerary, Naxos taxis offer the ideal blend of convenience and efficiency for your island adventure.
           `,
+        transportation: {
+          heading: "Public Transportation Information",
+          info: `Naxos Island offers convenient bus services connecting Naxos Airport (or the Naxos Port) to various destinations across the island. Bus schedules are typically designed to align with flight arrivals and departures. However, it's recommended to check the most current timetable either online or at the airport/port upon your arrival, as schedules may vary seasonally. A one-way bus ticket from the airport/port to popular destinations like Naxos Town (Chora) or Agios Prokopios usually costs around €5, making it a budget-friendly transportation choice. The bus journey from Naxos Airport to the island's main towns or beaches takes approximately 10-15 minutes.`,
+          link_title: "More information may be found at the following link:",
+          link: "https://www.naxosbuses.com/.",
+        },
       },
 
       faq: [
@@ -1347,6 +1364,12 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
                 Safe and Efficient Travel
                 Exploring the wonders of Heraklion Island becomes a seamless experience when you rely on its well-regulated taxi services. Whether you're indulging in a leisurely vacation or have a packed itinerary, Heraklion taxis offer the ideal blend of convenience and efficiency for your island adventure.
                 `,
+        transportation: {
+          heading: "Public Transportation Information",
+          info: `Bus service is provided between the Airport and Heraklion city center. Tickets can be purchased by the bus conductor.`,
+          link_title: "More information may be found at the following link:",
+          link: "https://astiko-irakleiou.gr/en/",
+        },
       },
 
       faq: [
@@ -1440,7 +1463,7 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
 
       slide: {
         name: "Rhodes",
-        photo: "/assets/taxi-locations/taxi-rhodes.jpeg", // photo needed
+        photo: "/assets/taxi-locations/taxi-rhodes.png", // photo needed
         href: "/airport-transfers/rhodes/",
       },
 
@@ -1479,6 +1502,13 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
           Safe and Efficient Travel
           Exploring the wonders of Rhodes Island becomes a seamless experience when you rely on its well-regulated taxi services. Whether you're indulging in a leisurely vacation or have a packed itinerary, Rhodes taxis offer the ideal blend of convenience and efficiency for your island adventure.
           `,
+        transportation: {
+          heading: "Public Transportation Information",
+          info: `Bus service is provided between the Airport and the city of Rhodes. The bus stop is located between the old and the new Terminal.
+You can call RODA services at (+30)22410-26300 or (+30)22410-24129.`,
+          link_title: "More information may be found at the following link:",
+          link: "https://www.rodospublictransport.gr/index.php?c=schedule&p=busstop&uid=329.",
+        },
       },
 
       faq: [
@@ -1610,6 +1640,15 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
           Safe and Efficient Travel
           Exploring the wonders of Kos Island becomes a seamless experience when you rely on its well-regulated taxi services. Whether you're indulging in a leisurely vacation or have a packed itinerary, Kos taxis offer the ideal blend of convenience and efficiency for your island adventure.
           `,
+        transportation: {
+          heading: "Public Transportation Information",
+          info: ` 
+ 	
+Transit bus service is provided between the Airport and the city of Kos, Mastichari, Kardamena and Kefalos. There is a public bus stop 50m from the terminal building. Tickets can be purchased by the bus driver.  `,
+
+          link_title: "More information may be found at the following link:",
+          link: "http://www.ktel-kos.gr/site_en/",
+        },
       },
 
       faq: [
@@ -1740,6 +1779,12 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
           Safe and Efficient Travel
           Exploring the wonders of Chalkidiki becomes a seamless experience when you rely on its well-regulated taxi services. Whether you're indulging in a leisurely vacation or have a packed itinerary, Chalkidiki taxis offer the ideal blend of convenience and efficiency for your adventure.
           `,
+        transportation: {
+          heading: "Public Transportation Information",
+          info: `Bus service is provided between the Airport and the city of Thessaloniki, with connections to the Central Railway Station and the "Makedonia" Regional Coach Terminal (KTEL). The bus stop is located at the departures area, in front of entrance 3 of T1. Tickets can be purchased by the bus driver.`,
+          link_title: "More information may be found at the following link:",
+          link: "https://oasth.gr/",
+        },
       },
 
       faq: [
@@ -1870,6 +1915,13 @@ Exploring the wonders of Paros Island becomes a seamless experience when you rel
           Safe and Efficient Travel
           Exploring the wonders of Corfu Island becomes a seamless experience when you rely on its well-regulated taxi services. Whether you're indulging in a leisurely vacation or have a packed itinerary, Corfu taxis offer the ideal blend of convenience and efficiency for your island adventure.
           `,
+        transportation: {
+          heading: "Public Transportation Information",
+          info: `Bus service is provided between the Airport and the city of Corfu. The bus stop is located in front of the Terminal Building A.
+`,
+          link_title: "More information may be found at the following link:",
+          link: "http://www.astikoktelkerkyras.gr/dataeg.php?cat=28801",
+        },
       },
 
       faq: [

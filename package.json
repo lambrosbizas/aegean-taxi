@@ -33,6 +33,7 @@
     "react-dom": "^18.2.0",
     "react-hotjar": "^6.1.0",
     "react-slick": "^0.29.0",
+    "read-more-react": "^1.0.10",
     "sharp": "^0.32.0",
     "slick-carousel": "^1.8.1",
     "swr": "^2.1.5",

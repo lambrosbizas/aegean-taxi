@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import ReadMoreReact from "read-more-react";
 
 // MUI
 import Box from "@mui/material/Box";
@@ -68,13 +69,18 @@ export default function Reviews({ location }: any) {
     }
   };
 
+  const handleReflow = (rleState) => {
+    const { clamped, text } = rleState;
+    // do sth...
+  };
+
   const Review = ({ item }: any) => (
     <Stack spacing={2} sx={{ p: 1 }}>
       <Paper
         sx={{
           background: "#244284",
           color: "#fff",
-          minHeight: "500px",
+          // minHeight: "500px",
         }}
       >
         <Box sx={{ p: 2 }}>
@@ -87,7 +93,13 @@ export default function Reviews({ location }: any) {
               minHeight: { xs: "200px", md: "170px" },
             }}
           >
-            {item.text}
+            <ReadMoreReact
+              text={item.text}
+              min={50}
+              ideal={200}
+              max={500}
+              readMoreText={"Read more..."}
+            />
           </Typography>
 
           {/* User */}
