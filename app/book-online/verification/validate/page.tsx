@@ -23,10 +23,8 @@ import useStorage from "@/hooks/useStorage";
 import { BookingState } from "@/types/bookingState";
 
 // crypto
-import AES from 'crypto-js/aes';
+import AES from "crypto-js/aes";
 var CryptoJS = require("crypto-js");
-
-
 
 export default function Validation({}: {}) {
   const router = useRouter();
@@ -41,10 +39,7 @@ export default function Validation({}: {}) {
     appState.state = aegeanState;
     if (aegeanState && aegeanState.userVerified) {
       router.push("/book-online");
-    } else if (
-      aegeanState &&
-      (!aegeanState.apiToken || !aegeanState.phoneNumber)
-    ) {
+    } else if (aegeanState && !aegeanState.phoneNumber) {
       router.push("/book-online");
     }
   }, [aegeanState]);
@@ -54,11 +49,14 @@ export default function Validation({}: {}) {
   };
 
   function onSubmit() {
-    let securityCode = AES.decrypt(`${appState.state.security.code}`, `${process.env.NEXT_PUBLIC_CRYPTO_KEY}`);
+    let securityCode = AES.decrypt(
+      `${appState.state.security.code}`,
+      `${process.env.NEXT_PUBLIC_CRYPTO_KEY}`
+    );
 
     if (securityCode.toString(CryptoJS.enc.Utf8) === secCode) {
-      appState.state.searchingForDriver = true,
-      appState.state.userVerified = true;
+      (appState.state.searchingForDriver = true),
+        (appState.state.userVerified = true);
       appState.state.security.code = "null";
       appState.updateAppState(appState.state);
       setItem("aegean", appState.state, "local");
