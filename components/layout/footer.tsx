@@ -509,7 +509,11 @@ export default function FooterLayout() {
             display: { xs: showWhatsAppButton, md: "initial" },
           }}
         >
-          <a href="https://wa.me/6943829494" target="_blank" className="mr-4">
+          <a
+            href="https://wa.me/00306943829494"
+            target="_blank"
+            className="mr-4"
+          >
             <Image
               src={whatsApp}
               width="129"
@@ -519,7 +523,7 @@ export default function FooterLayout() {
           </a>
         </Box>
         <Box sx={{ display: { xs: "none", md: "initial" } }}>
-          <a href="tel:+6943829494" className="">
+          <a href="tel:+306943829494" className="">
             <Image src={phoneIcon} width="46" height="46" alt="Call us" />
           </a>
         </Box>

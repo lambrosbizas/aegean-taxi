@@ -2,24 +2,21 @@ export const locationDetails: any = {
   default: {
     reviews: [
       {
-        flag: "french",
-        dateName: "Laura - March 2023",
-        text: `
-
-
-Booking a ride on Milos Island was very easy with the Web-based service provided by Aegean Taxi. The process is simple, and their professional drivers will ensure you have a comfortable and safe ride. They all speak English`,
+        flag: "uk",
+        dateName: "Ken - May 2023",
+        text: `I was impressed with the quality of service from this taxi company. The driver was professional, the car was clean and comfortable, and the price was affordable. Highly recommend.
+`,
       },
       {
         flag: "america",
-        dateName: "Jo - July 2022",
-        text: `We spent a week in Milos and used Aegean for all of our journeys during our stay. All was communicated through WhatsApp, so really easy to communicate. The cars were always clean and the drivers made sure we always felt comfortable on our journeys as the roads are pretty unique in Milos!! The drivers have all the local knowledge so better if in traffic! Definitely recommend!!
+        dateName: "Nicolas - August 2022",
+        text: `I highly recommend Aegean Taxi App for their excellent service and quality cars. The app is easy to use, and the drivers are friendly and professional.
 `,
       },
       {
-        flag: "uk",
-        dateName: "Carter - June 2022",
-        text: `We have used Aegean Taxi app several times while in Milos. First from the airport, and then all over the island. It was simple, affordable and convenient, with competitive prices and professional drivers. You can be sure that you will always have a pleasant experience.
-`,
+        flag: "spain",
+        dateName: "Fernando - June 2022",
+        text: `I have booked my ride via website. I was also pleased with the affordable price and the drivers professionalism.`,
       },
     ],
   },
