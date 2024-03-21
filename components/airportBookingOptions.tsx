@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 "use client";
 import { useState, SyntheticEvent } from "react";
 import Image from "next/image";

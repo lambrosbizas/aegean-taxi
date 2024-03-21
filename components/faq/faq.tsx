@@ -209,7 +209,7 @@ export default function Faq({ location, type }: any) {
                 email: contact@aegeantaxi.com
                 <br /> Phone: +30 215 215 4000
                 <br />
-                Whatsapp: +306936240506
+                Whatsapp: +306943829494
               </Typography>
             </AccordionDetails>
           </Accordion>
