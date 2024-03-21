@@ -510,7 +510,7 @@ export default function FooterLayout() {
           }}
         >
           <a
-            href="https://wa.me/00306943829494"
+            href="https://wa.me/+306943829494"
             target="_blank"
             className="mr-4"
           >
