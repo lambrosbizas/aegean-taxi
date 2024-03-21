@@ -47,7 +47,7 @@ export default function AirportBookingOptions({
     setValue(newValue);
   };
 
-  let settings = {
+  let settings: any = {
     dots: true,
     infinite: true,
     initialSlide: 0,

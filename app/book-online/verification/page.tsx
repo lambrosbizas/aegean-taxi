@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { useEffect, useState, useContext } from "react";
 import { useRouter } from "next/navigation";
 
@@ -450,17 +451,16 @@ export default function VerificationComponent({}: {}) {
     }
   }, []);
 
-  // useEffect(() => {
-  //   // if (aegeanState) {
-  //   //   bookingContext.updateAppState(aegeanState);
-  //   // }
+  useEffect(() => {
+    if (aegeanState) {
+      bookingContext.updateAppState(aegeanState);
+    }
 
-  //   if (bookingState && data && !bookingState.apiToken) {
-  //     bookingState.apiToken = data.access_token;
-  //     setItem("aegean", bookingState, "local");
-  //   }
-  //   return () => {};
-  // }, [bookingState, data]);
+    if (bookingState) {
+      setItem("aegean", bookingState, "local");
+    }
+    return () => {};
+  }, [aegeanState, bookingContext, bookingState, setItem]);
 
   // if (error) return <div>There was an error loading the app</div>;
   // if (!data) return <div>Loading...</div>;
@@ -513,8 +513,7 @@ export default function VerificationComponent({}: {}) {
     // FIXME:
     // Override temporary
     sendSms(
-      bookingState.apiToken,
-      [`00${bookingState.phoneNumber.replace("+", "")}`],
+      `00${bookingState.phoneNumber.replace("+", "")}`,
       `Your access code is ${smsCode}`
     );
 

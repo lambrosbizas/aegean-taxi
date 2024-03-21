@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 "use client";
 import { useState, SyntheticEvent } from "react";
 import Image from "next/image";
@@ -190,7 +192,7 @@ export default function BookingOptions({
                       sx={{
                         mt: 3,
                         display: { xs: "block", md: "none" },
-                        minHeight: 77
+                        minHeight: 77,
                       }}
                     >
                       Download our taxi app from the stores,
@@ -300,12 +302,12 @@ export default function BookingOptions({
                     </Typography>
                   </Box>
 
-                   <Typography
+                  <Typography
                     variant="body1"
                     sx={{
                       mt: 3,
                       display: { xs: "block", md: "none" },
-                      minHeight: 77
+                      minHeight: 77,
                     }}
                   >
                     Our 24/7 call center is always available to
@@ -413,12 +415,12 @@ export default function BookingOptions({
                     </Typography>
                   </Box>
 
-                   <Typography
+                  <Typography
                     variant="body1"
                     sx={{
                       mt: 3,
                       display: { xs: "block", md: "none" },
-                      minHeight: 77
+                      minHeight: 77,
                     }}
                   >
                     Just launch WhatsApp and request a ride, 24/7. Instant
@@ -524,12 +526,12 @@ export default function BookingOptions({
                     </Typography>
                   </Box>
 
-                   <Typography
+                  <Typography
                     variant="body1"
                     sx={{
                       mt: 3,
                       display: { xs: "block", md: "none" },
-                      minHeight: 77
+                      minHeight: 77,
                     }}
                   >
                     Mobile friendly instant booking
